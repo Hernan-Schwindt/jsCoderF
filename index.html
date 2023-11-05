@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>delivery</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <h1>
+                    <a href="#sectionHome">
+                        <b>el restaurante en tu mesa</b>
+                    </a>
+                </h1>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#sectionHome">
+                                <b>Home</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#compraProductos">
+                                <b>Productos</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#formBox">
+                                <b>Footer</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#formBox">
+                                <b>Login</b>
+                            </a>
+                        </li>
+                        <!-- aca va el usuario cuando se registre -->
+                        <li id="userNew"></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="sectionHome">
+        <div class="boxHomeImg">
+            <img src="img/Index/pizza.jpg" alt="imagen inicio de pizza">
+        </div>
+        <h2></h2>
+        <div class="boxButton">
+            <a href="#compraProductos">
+                <button><b>ver Productos</b></button>
+            </a>
+        </div>
+        <div class="boxTrolley" id="popUpCart">
+            <img src="img/Index/trolley.png" alt="img de carrito">
+            <span id="contadorCarrito">0</span>
+        </div>
+    </section>
+    <main id="compraProductos" class="indexCom">
+        <div class="compra">
+            <div class="imgBackground">
+                <img src="img/Index/burger.jpg" alt="imagen de el main de compra">
+            </div>
+            <div class="boxItems">
+                <div class="items" id="itemProducto">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="nosotros">
+        <div class="imgBackground">
+            <img src="img/Index/nosotros.png" alt="">
+        </div>
+        <div class="textNosotros">
+            <h3><b>sobre nosotros</b></h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum fuga sit quibusdam
+                necessitatibus, inventore error quia quam illum, quo commodi voluptatum repellat nostrum dolorem
+                deleniti impedit? Corrupti, ducimus culpa.
+            </p>
+        </div>
+    </section>
+    <section class="forms" id="formBox">
+        <div>
+            <div class="boxForm">
+                <form action="" id="formAdd" class="formNone form">
+                    <fieldset>
+                        <h2><b>REGISTRARSE</b></h2>
+                        <div class="name formInput">
+                            <input type="text" placeholder=" nick" id="addNick">
+                            <label for="myname">Nombre</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class="mail formInput">
+                            <input type="email" placeholder="Gmail" id="addGmail" required>
+                            <label for="email">Correo electrónico</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class="password formInput">
+                            <input type="password" placeholder=" CONTRASEÑA" id="addPass">
+                            <label for="password">Contraseña</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class="formInput imgAvatar">
+                            <input type="text" placeholder="ponga la URL de su avatar" id="addImg">
+                            <label for="password">url de avatar</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class="form-termsAndConditions termsAndConditions">
+                            <input type="checkbox" id="termsAndConditions">
+                            <label for="termsAndConditions">He leído y acepto los </label>
+                            <a href="#">Términos y Condiciones</a>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <button id="addSubmit" type="button">enviar</button>
+                        <div>
+                            <button id="irLogin" type="button"><b>login</b></button>
+                        </div>
+                    </fieldset>
+                    <nav id="faltaDatosRegister">
+                        <ul>
+
+                        </ul>
+                    </nav>
+                </form>
+                <form action="" id="formLogin" class="form">
+                    <fieldset>
+                        <h2><b>Login</b></h2>
+                        <div class="nameLogin formInput">
+                            <input type="text" placeholder=" nick" id="loginNick">
+                            <label for="myname">Nombre</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class="mailLogin formInput">
+                            <input type="email" placeholder="Gmail" id="loginGmail" required>
+                            <label for="email">Correo electrónico</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class="passwordLogin formInput">
+                            <input type="password" placeholder=" CONTRASEÑA" id="loginPass">
+                            <label for="password">Contraseña</label>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <div class=" termsAndConditionsLogin">
+                            <input type="checkbox" id="termsAndConditionsLogin">
+                            <label for="termsAndConditionsLogin">He leído y acepto los </label>
+                            <a href="#">Términos y Condiciones</a>
+                            <p class="mensajeError"></p>
+                        </div>
+                        <button id="loginSubmit" type="button">ingresar</button>
+                        <div>
+                            <button id="irRegister" type="button"><b>Registrarse</b></button>
+                        </div>
+                    </fieldset>
+                    <p class="mensajeCorrecto"></p>
+                    <nav id="faltaDatosLogin">
+                        <ul>
+
+                        </ul>
+                    </nav>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="modal" id="modal">
+        <div class="trolley">
+            <div class="titleBox">
+                <div class="titleCart">
+                    <h3>Carrito</h3>
+                    <i class="icino-x fa-solid fa-xmark" id="trolleyX"></i>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Nombre</li>
+                        <li>Cantidad</li>
+                        <li>precio</li>
+                        <li>eliminar</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="itemsTrolley">
+            </div>
+            <div class="footerTrolley">
+                <ul>
+                    <li>Total a pagar :</li>
+                    <li>$ <b id="precioTotal">0</b></li>
+                </ul>
+                <div>
+                    <button id="vaciarCarrito">Vaciar carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer-regis">
+        <div>
+            <div class="siguenos">
+                <h3>SIGUENOS</h3>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ " target="_blank" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.instagram.com/?hl=es-la" target="_blank" class="fa fa-instagram"></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div></div>
+            <div class="small">
+                <small>&copy; 2022 <b>delivery</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </div>
+    </footer>
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/f32ba75cef.js" crossorigin="anonymous"></script>
+    <!-- js mios -->
+    <script src="js/items.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
