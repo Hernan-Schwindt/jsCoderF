@@ -37,13 +37,7 @@ do {
       + "gmail : " + gmail + "\n" 
       + "contraseña : " + contraseña)
 
-      if(((usuario == "") && (gmail == "") && (contraseña == "")) 
-      || ((usuario !== "") && (gmail !== "") && (contraseña == "")) 
-      || ((usuario !== "") && (gmail == "") && (contraseña !== ""))
-      || ((usuario == "") && (gmail !== "") && (contraseña !== ""))
-      || ((usuario == "") && (gmail == "") && (contraseña !== ""))
-      || ((usuario !== "") && (gmail == "") && (contraseña == ""))
-      || ((usuario == "") && (gmail !== "") && (contraseña == ""))){
+      if((usuario == "") || (gmail == "") || (contraseña == "")){
           alert("ERROR \n \n falta ingresar datos para seguir con el registro")
       } 
   }
